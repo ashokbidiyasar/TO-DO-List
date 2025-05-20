@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#123677,#4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    padding:12px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title{
+    color: #c701f8;
+    margin-left: 37%;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#todo-input{
+    font-size: 0.95rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+    font-family:  Arial, sans-serif;
+    font-weight: 500;
+    color: black;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+#add-todo{
+    padding:10px 20px 10px 20px;
+    margin-left: 5px;
+    outline: none;
+    border: none;
+    background-color: #ff5945;
+    color:#fff;
+    font-size:1rem;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#add-todo:hover{
+    background-color: #f2331d;
+    font-size: 1.05rem;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 5px;
+}
+
+ul li ::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color:#555;
+}
+
+
+
+.li-container{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding:5px;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.icon{
+    padding-bottom: 10px;
+    color:green;
+}
+.li-inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2px;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+   max-width: 330px;
+    justify-content: center;
+}
+
+.c-icon{
+    color: #ff5945;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
